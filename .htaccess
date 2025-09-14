@@ -1,0 +1,4 @@
+RewriteCond %{HTTP_HOST} ^alobrasil.net$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.alobrasil.net$
+RewriteCond %{REQUEST_URI} !public/ 
+RewriteRule (.*) /public/$1 [L]
