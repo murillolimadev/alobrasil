@@ -27,6 +27,9 @@ Route::get('imovel/{slug}', [HomeController::class, 'view'])->name('home.imovel.
 //anuncie
 Route::get('anuncie/', [HomeController::class, 'anuncie'])->name('home.anuncie.index');
 
+
+route(sadsadsa);
+
 // admin
 Route::middleware('auth')->group(function () {
     //dashboard
