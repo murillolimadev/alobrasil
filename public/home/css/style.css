@@ -1,4 +1,8 @@
 /*** Spinner Start ***/
+
+.breadcrumb{
+    background-color: transparent !important;
+}
 .vview video {
     width: 100%;
     height: auto;
