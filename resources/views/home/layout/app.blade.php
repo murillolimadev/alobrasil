@@ -40,10 +40,20 @@
     <link href="{{ asset('home/css/style.css') }}" rel="stylesheet">
 
     {{-- galeria images --}}
-    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="{{ asset('home/css/fluid-gallery.css') }}">
+
+    {{-- whatsapp --}}
+    <script>
+        //Constrói a URL depois que o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            //conteúdo que será compartilhado: Título da página + URL
+            var conteudo = encodeURIComponent(document.title + " " + window.location.href);
+            //altera a URL do botão
+            document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+        }, false);
+    </script>
 </head>
 
 <body>
@@ -166,7 +176,7 @@
                     '" frameborder="0" allowfullscreen></iframe>';
 
                 $('#videoModal .modal-body').html(
-                videoEmbedCode); // Insere o código de incorporação no modal
+                    videoEmbedCode); // Insere o código de incorporação no modal
                 $('#videoModal').modal('show'); // Exibe o modal
             });
 

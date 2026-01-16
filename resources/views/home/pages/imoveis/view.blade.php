@@ -12,6 +12,14 @@
     }
 </style>
 
+{{-- matas tags wt --}}
+<meta property="og:site_name" content="Destaque notícias">
+<meta property="og:title" content="{{ $data->title ?? '' }}">
+<meta property="og:description" content="{{ $data->desc ?? '' }}">
+<meta property="og:image" itemprop="image"
+    content="https://alobrasil.net/upload/imoveis/{{ $data->img ?? '' }}">
+<meta property="og:type" content="website">
+
 @section('content')
     <div class="container-fluid my-5">
         <div class="container py-5">
@@ -87,8 +95,8 @@
                             <div class="blog-item position-relative bg-light rounded" style="margin-top: 50px;">
                                 <a href="" data-toggle="modal" class="vview"
                                     data-target=".bd-example-modal-lg{{ $item->id }}">
-                                    <video src="{{ asset('upload/video/' . $item->file) }}"
-                                        width="100%" height="auto"></video>
+                                    <video src="{{ asset('upload/video/' . $item->file) }}" width="100%"
+                                        height="auto"></video>
                                 </a>
                             </div>
                         </div>
@@ -121,10 +129,10 @@
     <div class="container py-5">
         <div class="col-lg-12">
             <span style="font-size: 10px">Compartilhar</span> <br>
-            <a href="https://api.whatsapp.com/send?text=link/{{ $data->slug }}">
+            <a href="https://api.whatsapp.com/send?text=www.alobrasil.net/imovel/{{ $data->slug }}">
                 <img src="{{ asset('home/img/whatsapp.png') }}" class="whatsapp" alt="" width="25">
             </a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=link/">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=www.alobrasil.net/imovel/{{ $data->slug }}">
                 <img width="25" height="25"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/768px-Facebook_icon_2013.svg.png"
                     alt="">
