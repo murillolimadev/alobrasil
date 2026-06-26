@@ -16,8 +16,7 @@
 <meta property="og:site_name" content="Destaque notícias">
 <meta property="og:title" content="{{ $data->title ?? '' }}">
 <meta property="og:description" content="{{ $data->desc ?? '' }}">
-<meta property="og:image" itemprop="image"
-    content="https://alobrasil.net/upload/imoveis/{{ $data->img ?? '' }}">
+<meta property="og:image" itemprop="image" content="https://alobrasil.net/upload/imoveis/{{ $data->img ?? '' }}">
 <meta property="og:type" content="website">
 
 @section('content')
@@ -130,13 +129,10 @@
         <div class="col-lg-12">
             <span style="font-size: 10px">Compartilhar</span> <br>
             <a href="https://api.whatsapp.com/send?text=www.alobrasil.net/imovel/{{ $data->slug }}">
-                <img src="{{ asset('home/img/whatsapp.png') }}" class="whatsapp" alt="" width="25">
+                <img src="{{ asset('home/img/whatsapp.png') }}" class="whatsapp" alt="" width="50">
             </a>
             <a href="https://www.facebook.com/sharer/sharer.php?u=www.alobrasil.net/imovel/{{ $data->slug }}">
-                <img width="25" height="25"
-                    src="home/img/Facebook_icon_2013.svg"
-                    
-                    alt="">
+                <img width="50" src="{{ asset('home/img/Facebook_icon_2013.png') }}" alt="">
             </a>
         </div>
     </div>
