@@ -1,5 +1,31 @@
 /*** Spinner Start ***/
 
+.wt {
+    position: fixed;
+    bottom: 20px;
+    /* Distância do fundo da tela */
+    right: 20px;
+    /* Distância do lado direito da tela */
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    /* Cor de fundo (ex: WhatsApp) */
+    color: #fff;
+    /* Cor do ícone */
+    border-radius: 50px;
+    /* Deixa o botão totalmente redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    /* Sombra para dar destaque */
+    z-index: 1000;
+    /* Garante que fique por cima de outros elementos */
+    transition: all 0.3s ease;
+    /* Efeito suave ao passar o mouse */
+}
+
+
 .breadcrumb{
     background-color: transparent !important;
 }

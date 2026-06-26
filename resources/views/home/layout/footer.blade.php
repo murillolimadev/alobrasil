@@ -47,7 +47,7 @@
                               class="fas fa-angle-right text-secondary me-2"></i>Helps</a> --}}
                       <a href="" class="mb-2 text-white"><i
                               class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                 
+
                   </div>
               </div>
               <div class="col-lg-3 col-md-6">
@@ -81,6 +81,4 @@
   <!-- Footer End -->
 
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
-          class="fa fa-arrow-up text-white"></i></a>
+
