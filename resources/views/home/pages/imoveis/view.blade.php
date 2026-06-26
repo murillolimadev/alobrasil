@@ -134,7 +134,8 @@
             </a>
             <a href="https://www.facebook.com/sharer/sharer.php?u=www.alobrasil.net/imovel/{{ $data->slug }}">
                 <img width="25" height="25"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/768px-Facebook_icon_2013.svg.png"
+                    src="home/img/Facebook_icon_2013.svg"
+                    
                     alt="">
             </a>
         </div>
