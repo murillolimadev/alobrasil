@@ -62,7 +62,6 @@
     @yield('content')
     @include('home.layout.footer')
     <!-- Back to Top -->
-    +55 99 
     <a href="https://wa.me/5599982854848" target="_blank" class="wt">
         {{-- <i class="bi bi-arrow-up"></i> --}}
         <img src="{{ asset('home/img/wt.png') }}" alt="" style="width: 70px; height: 70px;">
